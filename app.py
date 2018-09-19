@@ -7,6 +7,9 @@ app = Flask(__name__)
 def hello_world():
     return render_template('index.html')
 
+@app.route('/dropbox')
+def dropbox():
+    return render_template('dropbox.html')
 
 if __name__ == '__main__':
     app.run()
